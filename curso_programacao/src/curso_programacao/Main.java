@@ -1,5 +1,7 @@
 package curso_programacao;
 
+import java.util.Locale;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -7,7 +9,18 @@ public class Main {
 		System.out.println("Olá mundo!");
 		System.out.println("Alterado pelo Gihub.");
 		System.out.println("Teste código unicode:"+'\u0061'+"\nTeste digitado:"+'a');
-
+		Locale.setDefault(Locale.US);
+		double x = 10.35784;
+		System.out.println(x);
+		System.out.printf("%.2f\n",x);
+		System.out.printf("%.4f\n",x);
+		Locale.setDefault(Locale.ITALY);
+		System.out.println(x);
+		System.out.printf("%.2f\n",x);
+		System.out.printf("%.4f\n",x);
+		Locale.setDefault(Locale.US);
+		System.out.println("RESULTADO = " + x + " METROS.");
+		System.out.printf("RESULTADO = %.2f METROS.\n", x);
 	}
 
 }
