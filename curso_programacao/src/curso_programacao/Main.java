@@ -6,6 +6,7 @@ public class Main {
 		
 		System.out.println("Olá mundo!");
 		System.out.println("Alterado pelo Gihub.");
+		System.out.println("Teste código unicode:"+'\u0061'+"\nTeste digitado:"+'a');
 
 	}
 
